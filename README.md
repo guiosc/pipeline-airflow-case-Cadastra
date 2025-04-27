@@ -76,7 +76,7 @@ O projeto cria e atualiza as seguintes tabelas:
 - **fact_assets** — Fato principal com dados atualizados (preço, market cap, etc).
 - **fact_assets_history** — Histórico diário de preço para análise temporal.
 
-<img href='https://github.com/guiosc/pipeline-airflow-case-Cadastra/blob/main/dashboard/tabelas-Supabase.png' width=100 px height=200>
+<img href='https://github.com/guiosc/pipeline-airflow-case-Cadastra/blob/main/dashboard/tabelas-Supabase.png'>
 
 ---
 
@@ -87,7 +87,7 @@ Após populado o banco, conecte o **Power BI** no seu banco Postgres para constr
 - Quantidade de cryptos mapeadas.
 - Melhor e pior performance diária de criptomoedas.
 
-<img href='https://github.com/guiosc/pipeline-airflow-case-Cadastra/blob/main/dashboard/dashboard-Crypto.png' width=100 px height=200>
+<img href='https://github.com/guiosc/pipeline-airflow-case-Cadastra/blob/main/dashboard/dashboard-Crypto.png'>
 
 ---
 
