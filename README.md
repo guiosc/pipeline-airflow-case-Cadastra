@@ -1,11 +1,11 @@
 # pipeline-airflow-case-Cadastra
 
-Este projeto implementa uma pipeline ETL utilizando **Apache Airflow**, com coleta de dados de criptomoedas via API pública, armazenamento em **PostgreSQL** e criação de dashboard no **Power BI**.
+Este projeto implementa uma pipeline ETL utilizando **Apache Airflow**, com coleta de dados de criptomoedas via API pública, armazenamento no **Supabase (PostgreSQL)** e criação de dashboard no **Power BI**.
 
 ## 📦 Funcionalidades
 - Conexão com API pública de criptomoedas.
 - Coleta de dados de **preço atual** e **histórico diário**.
-- Armazenamento em banco de dados PostgreSQL.
+- Armazenamento em banco de dados no Supabase (PostgreSQL).
 - Atualização automática via DAGs no Airflow (6/6h e diária).
 - Dashboard interativo em Power BI.
 
@@ -37,13 +37,11 @@ dbname=seu_dbname
 api_key=sua_api_key_crypto
 ```
 
-> (Exemplo de banco local: `host=postgres`)
-
 ---
 
 ## 🐳 Executando o Projeto com Docker
 
-Suba o ambiente completo (Airflow + Postgres + Redis):
+Suba o ambiente completo (Airflow + Dependências):
 ```bash
 docker-compose up -d
 ```
@@ -101,7 +99,7 @@ Após populado o banco, conecte o **Power BI** no seu banco Postgres para constr
 
 ## 📄 Tecnologias utilizadas
 - Apache Airflow
-- PostgreSQL
+- Supabase (PostgreSQL)
 - Docker & Docker Compose
 - SQLAlchemy
 - Pandas
@@ -118,5 +116,5 @@ Sinta-se à vontade para abrir Issues ou Pull Requests.
 
 ## 🧐 Autor
 
-Desenvolvido por [Guilherme Coelho](https://github.com/guiosc) no desafio de Data Engineering da Cadastra.
+Desenvolvido por [Guilherme Coelho](https://www.linkedin.com/in/guilherme-coelho-data-engineer/) no desafio de Data Engineering da Cadastra.
 
